@@ -219,9 +219,11 @@ const fizzbuzz = []
 for (let i = 0; i < nums.length; i++){
     if (nums[i] % 3 === 0) {
         fizz.push(nums[i])
-    } else if (nums[i] % 5 === 0) {
+    }
+    if (nums[i] % 5 === 0) {
         buzz.push(nums[i])
-    } else {
+    }
+    if (nums[i] % 3 === 0 && nums[i] % 5 === 0) {
         fizzbuzz.push(nums[i])
     }
 }   
@@ -317,7 +319,7 @@ for (const element of numArrays) {
 }
 
 
-console.log('Exercise 15 result:\n', total);
+// console.log('Exercise 15 result:\n', total);
 
 
 
